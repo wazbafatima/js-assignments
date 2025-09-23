@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+   
+<div class="calculator">
+   <div id="heading"> <h1>Calculator </h1></div>
+  <input type="text" id="inputResult" placeholder="0" readonly>
+
+  <div>
+    <button class="operator" onclick="clc()">AC</button>
+    <button class="operator" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+    <button class="operator" onclick="setnumber('%')">%</button>
+    <button class="operator" onclick="setnumber('/')"><i class="fa-solid fa-divide"></i></button>
+  </div>
+
+  <div>
+    <button onclick="setnumber('7')">7</button>
+    <button onclick="setnumber('8')">8</button>
+    <button onclick="setnumber('9')">9</button>
+    <button class="operator" onclick="setnumber('*')">×</button>
+  </div>
+
+   <div>
+    <button onclick="setnumber('4')">4</button>
+    <button onclick="setnumber('5')">5</button>
+    <button onclick="setnumber('6')">6</button>
+    <button class="operator" onclick="setnumber('-')">-</button>
+  </div>
+
+  <div>
+    <button onclick="setnumber('1')">1</button>
+    <button onclick="setnumber('2')">2</button>
+    <button onclick="setnumber('3')">3</button>
+    <button class="operator" onclick="setnumber('+')">+</button>
+  </div>
+
+  <div>
+    <button onclick="setnumber('00')">00</button>
+    <button onclick="setnumber('0')">0</button>
+    <button onclick="setnumber('.')">.</button>
+    <button class="btn" onclick="getResult()">=</button>
+  </div>
+
+  </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
