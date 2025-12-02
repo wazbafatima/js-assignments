@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container h1 {
+    font-size: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color:rgb(19, 19, 146);
+    transition: 0.6s ease-out;
+    margin-bottom: 15px;
+  
+    
+}
+.container h1:hover{
+    transform: translateY(-10px); 
+    color: black; 
+
+
+}
+.container h1 span {
+   color: black;
+   transition: 0.6s ease-out;
+ }
+
+.container h1:hover span {
+    transform: translateY(-10px); 
+    color: rgb(19, 19, 146); 
+
+}
+
+
+.btn {
+    padding: 10px 20px;
+    
+}
+
+.btn button {
+    height: 70px;
+    width: 250px;
+    border: none;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: blue;
+    cursor: pointer;
+    margin-left: 190px;
+
+    transition: 0.6s ease-out;
+}
+.btn button:hover{
+     transform: translateY(-10px); 
+    color: black;
+     background-color:rgb(19, 19, 146) ;
+}
+
+
+
+#hexcode {
+    font-size: 28px; 
+    font-family: monospace; 
+    font-weight: bold;
+    color: #333; 
+    padding: 10px 20px; 
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+
+/* Mobile / Small screens */
+@media only screen and (max-width: 768px) {
+    .container h1 {
+        font-size: 60px; 
+        text-align: center;
+    }
+
+    .container h1 span {
+        display: block; 
+    }
+
+    .btn button {
+        width: 180px;    
+        height: 50px;    
+        font-size: 25px; 
+        display: block; 
+        margin: 0 auto;  
+    }
+
+    #hexcode {
+        font-size: 20px; 
+    }
+
+    .btn {
+        padding: 5px 0;
+    }
+}
+
+/* Extra small screens (phones) */
+@media only screen and (max-width: 480px) {
+    .container h1 {
+        font-size: 40px; 
+    }
+
+    .btn button {
+        width: 150px;    
+        height: 40px;
+        font-size: 18px; 
+        display: block;
+        margin: 0 auto;  
+    }
+
+    #hexcode {
+        font-size: 16px; 
+    }
+}
